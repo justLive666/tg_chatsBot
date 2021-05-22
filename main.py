@@ -63,7 +63,7 @@ def sql(_,msg):
 			sq = db.cursor()
 			try:
 				sq.execute(msg.text.split(".sql")[1])
-				msg.reply_text("Успешный sql запрос")
+				msg.reply_text("Успешно")
 			except:
 				msg.reply_text(f"Ошибка: {traceback.format_exc()}")
 
